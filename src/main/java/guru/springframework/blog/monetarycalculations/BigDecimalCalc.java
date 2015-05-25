@@ -3,9 +3,7 @@ package guru.springframework.blog.monetarycalculations;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-/**
- * Created by Admin on 4/24/2015.
- */
+
 public class BigDecimalCalc {
 
     public void calculate(String param1, String param2){

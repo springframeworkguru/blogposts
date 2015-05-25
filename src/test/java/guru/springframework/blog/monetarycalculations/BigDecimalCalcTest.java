@@ -2,9 +2,7 @@ package guru.springframework.blog.monetarycalculations;
 
 import org.junit.Test;
 
-/**
- * Created by Admin on 4/25/2015.
- */
+
 public class BigDecimalCalcTest {
 
     @Test

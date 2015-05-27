@@ -1,5 +1,6 @@
 package guru.springframework.blog.openclosedprinciple;
 
+
 public class ClaimApprovalManager {
     public void processClaim(InsuranceSurveyor surveyor){
         if(surveyor.isValidClaim()){

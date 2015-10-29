@@ -29,8 +29,9 @@ public class JobCandidate {
     public static Comparator<JobCandidate> ageComparator = new Comparator<JobCandidate>() {
         @Override
         public int compare(JobCandidate jc1, JobCandidate jc2) {
-            return (int) (jc2.getAge() - jc1.getAge());
-        }
+            return (jc2.getAge() < jc1.getAge() ? -1 :
+                    (jc2.getAge() == jc1.getAge() ? 0 : 1));
+          }
     };
 
     public static Comparator<JobCandidate> nameComparator = new Comparator<JobCandidate>() {

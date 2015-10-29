@@ -26,7 +26,8 @@ public class JobCandidate implements Comparable<JobCandidate> {
 
     @Override
     public int compareTo(JobCandidate candidate) {
-        return (this.age - candidate.age);
+         return (this.getAge() < candidate.getAge() ? -1 :
+                (this.getAge() == candidate.getAge() ? 0 : 1));
     }
 
     @Override

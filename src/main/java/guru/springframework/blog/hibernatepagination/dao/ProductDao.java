@@ -2,7 +2,6 @@ package guru.springframework.blog.hibernatepagination.dao;
 
 import guru.springframework.blog.hibernatepagination.domain.Product;
 import guru.springframework.blog.hibernatepagination.util.HibernateUtil;
-import org.apache.log4j.Logger;
 import org.hibernate.*;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
@@ -11,7 +10,6 @@ import org.hibernate.criterion.Restrictions;
 import java.util.List;
 
 public class ProductDao {
-    private Logger log = Logger.getLogger(ProductDao.class);
     public void saveProducts() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction trans = null;
@@ -29,7 +27,7 @@ public class ProductDao {
         } finally {
             session.close();
         }
-        log.info("Saved 30 products");
+        System.out.println("Saved 30 products");
     }
 
     public int listPaginatedProductsUsingQuery(int firstResult, int maxResults) {
@@ -42,9 +40,9 @@ public class ProductDao {
             List<Product> products = (List<Product>) query.list();
             if (products != null) {
                 paginatedCount = products.size();
-                log.info("Total Results: " + paginatedCount);
+                System.out.println("Total Results: " + paginatedCount);
                 for (Product product : products) {
-                    log.info("Retrieved Product using Query. Name: " + product.getProductName());
+                    System.out.println("Retrieved Product using Query. Name: " + product.getProductName());
                 }
             }
 
@@ -68,9 +66,9 @@ public class ProductDao {
             List<Product> products = (List<Product>) criteria.list();
             if (products != null) {
                 paginatedCount = products.size();
-                log.info("Total Results: " + paginatedCount);
+                System.out.println("Total Results: " + paginatedCount);
                 for (Product product : products) {
-                    log.info("Retrieved Product using Criteria. Name: " + product.getProductName());
+                    System.out.println("Retrieved Product using Criteria. Name: " + product.getProductName());
                 }
             }
 
@@ -97,7 +95,7 @@ public class ProductDao {
             List<Object[]> products = criteria.list();
             if (products != null) {
                 for (Object[] product : products) {
-                    log.info("Retrieved Product using ScrollableResults. Name: " + product[0] + " out of "+totalRecords + " products");
+                    System.out.println("Retrieved Product using ScrollableResults. Name: " + product[0] + " out of "+totalRecords + " products");
                 }
             }
 
@@ -135,7 +133,7 @@ public class ProductDao {
         } finally {
             session.close();
         }
-        log.info("Deleted all products");
+        System.out.println("Deleted all products");
 
     }
 }

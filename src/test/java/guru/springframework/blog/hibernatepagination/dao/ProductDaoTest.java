@@ -1,13 +1,11 @@
 package guru.springframework.blog.hibernatepagination.dao;
 
-import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ProductDaoTest {
-    private Logger log = Logger.getLogger(ProductDao.class);
     ProductDao productDao;
     @Before
     public void setUp() throws Exception {

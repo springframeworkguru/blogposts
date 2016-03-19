@@ -1,8 +1,8 @@
 Configutation:
   name: Default
 
-  properties:
-    property:
+  Properties:
+    Property:
       name: log-path
       value: "logs"
 
@@ -12,21 +12,21 @@ Configutation:
       name: Console_Appender
       target: SYSTEM_OUT
       PatternLayout:
-        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
 
     File:
       name: File_Appender
       fileName: ${log-path}/logfile.log
       PatternLayout:
-        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
 
     RollingFile:
       - name: RollingFile_Appender
         fileName: ${log-path}/rollingfile.log
-        filePattern: "${log-path}/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}.gz"
+        filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}.gz"
         PatternLayout:
-          Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
-        policies:
+          pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+        Policies:
           SizeBasedTriggeringPolicy:
             size: 1 KB
         DefaultRollOverStrategy:

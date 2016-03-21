@@ -1,12 +1,11 @@
-package guru.springframework.blog.log4joverview;
+package guru.springframework.blog.log4j2yaml;
 
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class MyApp {
-    private static Logger logger = LogManager.getLogger("MyApp.class");
-
+public class Log4J2YamlConf {
+    private static Logger logger = LogManager.getLogger();
     public void performSomeTask(){
         logger.debug("This is a debug message");
         logger.info("This is an info message");

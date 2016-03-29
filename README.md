@@ -1,7 +1,7 @@
 # Blog Posts
 This repository holds code examples supporting blog posts on [Spring Framework Guru](http://springframework.guru)
 
-* [Monetary Calculation Pitfalls in Java](https://springframework.guru/monetary-calculation-pitfalls/) 
+* [Monetary Calculation Pitfalls in Java](https://springframework.guru/monetary-calculation-pitfalls/)
 * [Open Closed Principle in Java](https://springframework.guru/open-closed-principle/‎)
 * [Dependency Inversion Principle](https://springframework.guru/dependency-inversion-principle/‎)
 * [Interface Segregation Principle](https://springframework.guru/interface-segregation-principle/)
@@ -10,3 +10,4 @@ This repository holds code examples supporting blog posts on [Spring Framework G
 * [Getting Current Date Time in Java](https://springframework.guru/getting-current-date-time-in-java/)
 * [Introducing Log4J 2 – Enterprise Class Logging](https://springframework.guru/introducing-log4j-enterprise-class-logging/)
 * [Hibernate Pagination – How To](https://springframework.guru/hibernate-pagination/)
+* [Log4J 2 Configuration: Using YAML](https://springframework.guru/log4j-2-configuration-using-yaml/)

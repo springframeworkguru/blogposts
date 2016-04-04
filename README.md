@@ -10,3 +10,4 @@ This repository holds code examples supporting blog posts on [Spring Framework G
 * [Getting Current Date Time in Java](https://springframework.guru/getting-current-date-time-in-java/)
 * [Introducing Log4J 2 – Enterprise Class Logging](https://springframework.guru/introducing-log4j-enterprise-class-logging/)
 * [Hibernate Pagination – How To](https://springframework.guru/hibernate-pagination/)
+* [Asynchronous Logging with Log4J 2](https://springframework.guru/asynchronous-logging-with-log4j-2/)

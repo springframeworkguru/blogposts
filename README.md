@@ -8,5 +8,7 @@ This repository holds code examples supporting blog posts on [Spring Framework G
 * [Running code via Spring Events in Spring Boot](https://springframework.guru/running-code-on-spring-boot-startup/)
 * [Sorting Java ArrayList](https://springframework.guru/sorting-java-arraylist/)
 * [Getting Current Date Time in Java](https://springframework.guru/getting-current-date-time-in-java/)
-* [Introducing Log4J 2 – Enterprise Class Logging](https://springframework.guru/introducing-log4j-enterprise-class-logging/)
 * [Hibernate Pagination – How To](https://springframework.guru/hibernate-pagination/)
+* [Logback Introduction: An Enterprise Logging Framework](https://springframework.guru/logback-enterprise-logging-framework-2/)
+
+

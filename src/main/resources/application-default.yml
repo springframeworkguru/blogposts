@@ -1,0 +1,7 @@
+logging:
+  pattern:
+    console: "%msg%n"
+  level:
+    org.springframework.web: INFO
+    guru.springframework.controllers: INFO
+    org.hibernate: INFO

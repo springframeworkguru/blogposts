@@ -1,0 +1,20 @@
+{
+  "id": 123,
+  "name": "Henry Smith",
+  "age": 28,
+  "salary": 2000,
+  "designation": "Programmer",
+  "address": {
+    "street": "Park Avn.",
+    "city": "Westchester",
+    "zipcode": 10583
+  },
+  "phoneNumbers": [
+    654321,
+    222333
+  ],
+  "personalInformation": {
+    "gender": "Male",
+    "maritialstatus": "Married"
+  }
+}

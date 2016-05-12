@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.StringWriter;
+
 
 public class JsonWriterObjectMapper {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -19,7 +19,6 @@ public class JsonWriterObjectMapper {
 
     public void writeEmployeeToJson(Employee emp) {
         try {
-            StringWriter stringEmp = new StringWriter();
             String jsonInString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(emp);
             logger.info("Employee JSON is\n" + jsonInString);
             objectMapper.configure(SerializationFeature.INDENT_OUTPUT, true);

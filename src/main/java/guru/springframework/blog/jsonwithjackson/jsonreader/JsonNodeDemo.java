@@ -3,7 +3,6 @@ package guru.springframework.blog.jsonwithjackson.jsonreader;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import guru.springframework.blog.jsonwithjackson.domain.Address;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +20,7 @@ public class JsonNodeDemo {
         rootNode = objectMapper.readTree(new File("employee.json"));
     }
         public JsonNode readJsonWithJsonNode() throws JsonProcessingException {
-         String prettyPrintEmployee = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(rootNode);
+        String prettyPrintEmployee = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(rootNode);
         logger.info(prettyPrintEmployee+"\n");
         return rootNode;
     }
@@ -29,7 +28,7 @@ public class JsonNodeDemo {
         {
             JsonNode nameNode=rootNode.path("name");
             String name=nameNode.asText();
-            logger.info("\n----------------------------\nEmployee Nme: "+name+"\n");
+            logger.info("\n----------------------------\nEmployee Name: "+name+"\n");
             return name;
         }
       public Map<String,String> readPersonalInformation() throws JsonProcessingException

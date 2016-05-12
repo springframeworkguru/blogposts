@@ -15,4 +15,5 @@ public class ObjectMapperDemo {
         logger.info(emp.toString());
         return emp;
     }
+
 }

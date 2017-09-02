@@ -1,0 +1,61 @@
+package guru.springframework.blog.gson.domain;
+
+import com.google.gson.annotations.Expose;
+
+import java.math.BigDecimal;
+
+import static sun.rmi.transport.TransportConstants.Version;
+
+public class Product {
+
+    public Product(String productId, String description, String imageUrl, BigDecimal price) {
+        this.productId = productId;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.price = price;
+    }
+    public Product(){}
+
+    private String productId;
+
+    private String description;
+
+
+    private String imageUrl;
+
+    @Expose
+    private BigDecimal price;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+}

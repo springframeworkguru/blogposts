@@ -35,6 +35,14 @@ public class GsonUtilTest {
         String result = GsonUtil.simpleJsonWithPrettyPrinting(product);
     }
 
+     @Test
+       public void jsonToObject() throws Exception {
+       /*ToDo: Condtruct JSON in a Java String and test jsonToObject - refer objectWithCustomDeserialization
+      for asserts on Product*/
+
+
+    }
+
     @Test
     public void simpleJsonWithExposeFields() throws Exception {
         String result = GsonUtil.simpleJsonWithExposeFields(product);

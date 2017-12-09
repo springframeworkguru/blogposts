@@ -3,7 +3,7 @@ package guru.springframework.blog.jsonprettyprinting.domain;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
-public class JsonPrettyPrintDemoBean {
+public class Person {
     public long personId = 123L;
     public String  personName = "James Clark";
 
@@ -25,7 +25,7 @@ public class JsonPrettyPrintDemoBean {
     }
     @Override
     public String toString() {
-        return "JsonPrettyPrintDemoBean{" +
+        return "Person{" +
                 "personId=" + personId +
                 ", personName='" + personName + '\'' +
                 '}';

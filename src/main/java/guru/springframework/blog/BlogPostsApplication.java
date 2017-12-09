@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = { JacksonAutoConfiguration.class })
+//@EnableAutoConfiguration(exclude = { JacksonAutoConfiguration.class })
 public class BlogPostsApplication {
 
     public static void main(String[] args) {

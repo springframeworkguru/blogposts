@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<product id="PO1">
+    <description>Spring Guru Mug</description>
+    <imageUrl>https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_shirt-rf412049699c14ba5b68bb1c09182bfa2_8nax2_512.jpg</imageUrl>
+    <price>18.949999999999999289457264239899814128875732421875</price>
+    <createdBy>
+        <email>john@springframework.guru</email>
+        <id>10</id>
+        <name>John</name>
+    </createdBy>
+</product>
